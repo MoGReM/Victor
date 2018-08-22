@@ -112,7 +112,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'باك') {
-    msg.reply('** ولكممم ء عمممممري  ,,  نورت المتجر **');
+    msg.reply('** ولكمممء ي عمممممري  ,,  نورت المتجر **');
   }
 });
 
