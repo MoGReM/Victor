@@ -4,7 +4,7 @@ const ytdl = require('ytdl-core');
 const request = require('request');
 const devs = ['451579764055080960','396958215377780747'];
 const child_process = require("child_process");
-const adminprefix = "1";
+const adminprefix = "v!";
 const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
@@ -156,27 +156,6 @@ message.author.send(`**مدة الرابط : يـوم
 });
 
 
-  client.on("ready", () => {
-
-    var guild;
-
-    while (!guild)
-
-        guild = client.guilds.get("اي دي سيرفرك - Server id");
-
-    guild.fetchInvites().then((data) => {
-
-        data.forEach((Invite, key, map) => {
-
-            var Inv = Invite.code;
-
-            dat[Inv] = Invite.uses;
-
-        });
-
-    });
-
-});
 
  
 
